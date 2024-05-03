@@ -82,9 +82,18 @@ h1, h2, h3, h4, h5, h6 {
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+
+  color: #000000;
+=======
   color: #FFFFFF;
+
 }
 
+p1{
+  margin-top: 0;
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
 abbr[title],
 abbr[data-original-title] {
   text-decoration: underline;
@@ -6533,6 +6542,9 @@ button.bg-dark:focus {
   content: "";
 }
 
+.separacion-cards{
+  color: #FFFFFF;
+}
 .embed-responsive .embed-responsive-item,
 .embed-responsive iframe,
 .embed-responsive embed,
@@ -7764,6 +7776,7 @@ button.bg-dark:focus {
 .mr-auto,
 .mx-auto {
   margin-right: auto !important;
+  
 }
 
 .mb-auto,
@@ -9880,14 +9893,33 @@ input[type="submit"]:hover{
 .product-card .main-images{
   position: relative;
   height: 210px;
+
+ 
+}
+.main-images {
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Alinea verticalmente las imágenes */
+}
+
+.main-images img {
+  max-width: 100%; /* Asegura que las imágenes no excedan el ancho del contenedor */
+  height: auto; /* Permite que las imágenes mantengan su proporción de aspecto */
+=======
+
 }
 .product-card .main-images img{
   position: absolute;
   height: 300px;
+
+  width: 12000px;
+  object-fit: cover;
+=======
   width: 300px;
   object-fit: cover;
 
   left: 12px;
+
   top: -40px;
   z-index: -1;
   opacity: 0;
@@ -9900,6 +9932,11 @@ input[type="submit"]:hover{
   color: #fff;
 }
 
+.shoe-details{
+  margin-top: 60px;
+}
+=======
+
 .product-card .shoe-details .shoe_name{
   font-size: 24px;
   font-weight: 500;
@@ -9910,6 +9947,10 @@ input[type="submit"]:hover{
   font-weight: 400;
   color: #333;
   text-align: justify;
+
+  margin-top: 20px;
+=======
+
 }
 .product-card .shoe-details .stars i{
   margin: 0 -1px;
